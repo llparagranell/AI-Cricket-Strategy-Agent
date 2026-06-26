@@ -41,7 +41,7 @@ export default function StrategyPage() {
       });
     } catch (error) {
       const fallback =
-        'The FastAPI strategy endpoint is not reachable yet. Start the backend on `http://localhost:8000`, then retry this prompt.\n\n**Suggested tactical frame:** prioritize matchup clarity, toss impact, pitch behavior, and phase-specific risk before making the final call.';
+        'The FastAPI strategy endpoint is not reachable yet. Due to Render free service, the backend may be waking up, redeploying, or temporarily unavailable because of the free instance limits. Wait 30-60 seconds, open the backend URL once, then retry this prompt..\n\n**Suggested tactical frame:** prioritize matchup clarity, toss impact, pitch behavior, and phase-specific risk before making the final call.';
       addMessage({ role: 'assistant', content: fallback, sources: [] });
       toast.error(error?.response?.data?.detail || 'Backend request failed');
     } finally {
