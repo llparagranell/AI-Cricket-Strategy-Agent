@@ -145,14 +145,14 @@ export default function StrategyPage() {
             ))}
           </div>
         </GlassCard>
-        <GlassCard>
+        {/* <GlassCard>
           <h2 className="text-lg font-black">Team Information</h2>
           <p className="mt-2 text-sm text-muted">{teamA} vs {teamB}</p>
           <p className="mt-1 text-sm text-muted">{venue}</p>
           <div className="mt-4 h-2 rounded-full bg-white/[0.08]">
             <div className="h-2 rounded-full bg-accent" style={{ width: `${confidence}%` }} />
           </div>
-        </GlassCard>
+        </GlassCard> */}
       </div>
     </div>
   );

@@ -29,9 +29,9 @@ export const upcomingMatches = [
 export const promptSuggestions = [
   'Should India bowl first at Wankhede?',
   'Predict Playing XI',
-  'Powerplay Strategy',
+  // 'Powerplay Strategy',
   'Death Over Strategy',
-  'Spin vs Pace',
+  // 'Spin vs Pace',
   'Weather Impact',
   'Pitch Report',
   'Winning Probability',

@@ -34,9 +34,7 @@ export default function LandingPage() {
               <Link to="/strategy">
                 <Button type="button">Start Analysis</Button>
               </Link>
-              <Link to="/dashboard">
-                <Button type="button" variant="secondary">Learn More</Button>
-              </Link>
+              
             </div>
           </div>
           <GlassCard className="relative overflow-hidden p-6">

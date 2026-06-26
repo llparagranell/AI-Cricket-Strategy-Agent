@@ -4,12 +4,12 @@ import { useState } from 'react';
 import { cn } from '../../utils/cn';
 
 const navItems = [
-  { label: 'Dashboard', to: '/dashboard', icon: LayoutDashboard },
+  // { label: 'Dashboard', to: '/dashboard', icon: LayoutDashboard },
   { label: 'Strategy Agent', to: '/strategy', icon: BrainCircuit },
-  { label: 'Knowledge Base', to: '/knowledge', icon: Database },
-  { label: 'Weather', to: '/weather', icon: CloudSun },
-  { label: 'Match Analysis', to: '/match-analysis', icon: BarChart3 },
-  { label: 'Settings', to: '/settings', icon: Settings },
+  // { label: 'Knowledge Base', to: '/knowledge', icon: Database },
+  // { label: 'Weather', to: '/weather', icon: CloudSun },
+  // { label: 'Match Analysis', to: '/match-analysis', icon: BarChart3 },
+  // { label: 'Settings', to: '/settings', icon: Settings },
 ];
 
 export default function Sidebar() {

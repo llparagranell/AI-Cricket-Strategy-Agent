@@ -15,12 +15,12 @@ export default function AppRoutes() {
     <Routes>
       <Route path="/" element={<LandingPage />} />
       <Route element={<AppLayout />}>
-        <Route path="/dashboard" element={<Dashboard />} />
+        {/* <Route path="/dashboard" element={<Dashboard />} /> */}
         <Route path="/strategy" element={<StrategyPage />} />
-        <Route path="/match-analysis" element={<MatchAnalysis />} />
-        <Route path="/weather" element={<Weather />} />
-        <Route path="/knowledge" element={<KnowledgeBase />} />
-        <Route path="/settings" element={<Settings />} />
+        {/* <Route path="/match-analysis" element={<MatchAnalysis />} /> */}
+        {/* <Route path="/weather" element={<Weather />} /> */}
+        {/* <Route path="/knowledge" element={<KnowledgeBase />} /> */}
+        {/* <Route path="/settings" element={<Settings />} /> */}
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
