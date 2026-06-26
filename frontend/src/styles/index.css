@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply min-h-screen bg-background bg-app-radial font-sans text-text antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent text-background;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply border border-border bg-white/[0.06] shadow-glass backdrop-blur-2xl;
+  }
+
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background;
+  }
+}
+
+@layer utilities {
+  .text-muted {
+    color: rgba(255, 255, 255, 0.75);
+  }
+}
