@@ -38,9 +38,12 @@ class CricketAgent:
         docs = []
 
         if not settings.DISABLE_RAG:
-            from app.services.rag_service import rag_service
+            try:
+                from app.services.rag_service import rag_service
 
-            docs = rag_service.retrieve(question, k=3)
+                docs = rag_service.retrieve(question, k=3)
+            except Exception:
+                docs = []
 
         if docs:
             sources.append("ChromaDB")
@@ -67,7 +70,10 @@ Document {i}
         # --------------------
         if self.needs_live_data(question):
 
-            tavily_context = tavily_service.get_context(question)
+            try:
+                tavily_context = tavily_service.get_context(question)
+            except Exception:
+                tavily_context = ""
 
             if tavily_context:
 

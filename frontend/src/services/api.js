@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-export const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+export const API_URL = "https://ai-cricket-strategy-agent.onrender.com/"; // Default to localhost if not set
+
 
 export const api = axios.create({
   baseURL: API_URL,
