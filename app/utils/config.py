@@ -30,5 +30,10 @@ class Settings:
         "sentence-transformers/all-MiniLM-L6-v2"
     )
 
+    DISABLE_RAG = os.getenv(
+        "DISABLE_RAG",
+        "false"
+    ).lower() in ("1", "true", "yes", "on")
+
 
 settings = Settings()

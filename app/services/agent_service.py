@@ -1,6 +1,6 @@
-from app.services.rag_service import rag_service
 from app.services.tavily_service import tavily_service
 from app.services.groq_service import groq_service
+from app.utils.config import settings
 
 
 class CricketAgent:
@@ -35,7 +35,12 @@ class CricketAgent:
         # --------------------
         # ChromaDB Context
         # --------------------
-        docs = rag_service.retrieve(question, k=3)
+        docs = []
+
+        if not settings.DISABLE_RAG:
+            from app.services.rag_service import rag_service
+
+            docs = rag_service.retrieve(question, k=3)
 
         if docs:
             sources.append("ChromaDB")
